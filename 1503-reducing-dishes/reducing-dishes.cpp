@@ -13,7 +13,7 @@ public:
         for(int i =0;i<n;i++){
             if(suf[i]>=0){
                 idx = i;
-                break;
+                break; 
             }
         }
         if(idx == -1) return 0;
