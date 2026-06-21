@@ -33,16 +33,14 @@ public:
             i++;
             j++;
         }
-
-        int ans = 0;
-
-        for(int i = 0; i < n; i++) {
-            if(grr[i] == 0)
-                ans += arr[i];
+        for(int i =idx;i<idx+k;i++){
+            grr[i] = 0;
         }
 
-        ans += maxloss;
-
+        int ans = 0;
+        for(int i =0;i<n;i++){
+            if(grr[i] == 0) ans+=arr[i];
+        }
         return ans;
     }
 };
