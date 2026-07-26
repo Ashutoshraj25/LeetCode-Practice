@@ -2,7 +2,6 @@ class Solution {
 public:
     void inorder(TreeNode* root ,int& k, int& ans){
         if(root == NULL) return;
-
         inorder(root->left,k,ans);
         k--;
         if(k == 0){
