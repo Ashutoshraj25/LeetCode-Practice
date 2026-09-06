@@ -4,7 +4,7 @@ public:
         int n = mat.size();
         int m = mat[0].size();
         vector<vector<int>> vis(n,vector<int>(m,0));
-        vector<vector<int>> dis(n,vector<int>(m,0));
+        //vector<vector<int>> dis(n,vector<int>(m,0));
         queue<pair<int,int>> q;
         for(int i =0;i<n;i++){
             for(int j =0;j<m;j++){
@@ -14,7 +14,7 @@ public:
                 else mat[i][j] = 1e9;
             }
         }
-
+       
         int dr[] = {-1,0,1,0};
         int dc[] = {0,1,0,-1};
 
